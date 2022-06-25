@@ -1,0 +1,72 @@
+#Mensaje de bienvenida: "Pet PRO"/"Aprende a cuidar tu mascota"
+#Se optimiza en una línea usando barra invertida y n
+#print ("PET PRO\n\n" "Aprend a cuidar tu mascota")
+#Menu inicial 0; pero mejorando por el MODULO 3.5
+prg_vers = "PET PRO v1.0"
+#print (prg_vers) ... prueba de variable del programa y su version OK
+#print(f"{prg_vers : ^50}") ... prueba titulo centrado OK
+
+# MODULO 0 :: Mensaje de Bienvenida
+left_alignment = " "
+center_alignment = prg_vers
+right_alignment = " "
+print(f"{left_alignment : <20}{center_alignment : ^15}{right_alignment : >20}\n")
+
+#print(f"{left_alignment : <10}{'Aprendiendo a cuidar tu mascota' : ^5}{right_alignment : >20}\n")
+#print(f"{'Aprendiendo a cuidar tu mascota' : ^50}") 
+#print ("Aprende a cuidar tu mascota") centrado de un sub titulo en espera...
+
+#De todo lo de las diapositivas se dividirán en modulos respectivos
+#1_Registro de mascota (nombre,edad en años y/o meses,peso?)
+#1.1 Especie de perros y gatos, almacenar lista dentro de lista
+#2_Cuidados básicos (alimentacion y sus tiempos,vacunas)
+#3_Cuidados avanzados (entrenamiento?,optimizacion?)
+#4_ER Animal (mi mascota está mal, signos de la enfermedad para un tratamiento, personal o por un profesional)
+#5_RENIAN para perros (se podrá enlazar con la web, indicar la ley, y explicar porque es importante)
+
+# Menu inicial, extraido de los modulos anteriores
+# 1. REGISTRO (usuario y sus mascotas) 
+# 2. VACUNAS (fecha programada segun edad)
+# 3. CONSEJOS (entrenamiento / optimizacion)
+# 4. ¿ESTA ENFERMITO? (enfermedades de perros y gatos, sintomas - signos y )
+# 5. RENIAN (registro de mascotas solo para perros)
+
+menu_opc = ['REGISTRO','VACUNAS',10,15,20,25,30,35,40]
+
+#print("Decide lo que vas a hacer:\n\t1) menu_opc[1].\t2)Opción 2.\n\t3) Opción 3.\t4) Opción 4. ")
+print("Decide lo que vas a hacer:\n\t1) REGISTRO.\t2)VACUNAS.\n\t3) CONSEJOS.\t4)ER ANIMAL. ")
+
+# MODULO X 3.5
+
+#datos ficticios para los mod 4 y 5
+#pero q la mayoría de estos ya se ingresan desde el modulo 1
+nam = "Johana"
+l_nam = "Barrios"
+dni = 43566765
+cel = +51986986789
+mail_usu = "johana_upal@gmail.com"
+nom_masc = "ñañito"
+#ya ingresado los datos se crea una lista de datos correspondiente al usuario registrado...
+
+#dicha lista, comprende las tres primeras letras del nombre, primera del apellido, y 4 ultimas del correo
+list_johb_upal = [nam, l_nam, dni, cel, mail_usu, nom_masc]
+#print (list_johb_upal) ... prueba de lista creada OK
+
+#pero al abrir primero la app, su menu inicial debe indicar
+#PET PRO "texto centrado" pero se entiende, q en vez de solo imprimir lo podemos convertir a variable, para una fácil edición posterior
+#Aprende a cuidar tu mascota
+#
+
+
+# MODULO 5 :: RENIAN
+
+ren_tit = "RENIAN\n\n"
+ren_ini = ", protege a tu Doggy e inscríbelo en el Registro Nacional de Mascotas.\n"
+ren_info = "Tu registro ayudará al Gobierno Peruano a fomentar Políticas Públicas de Protección y Bienestar Animal.\n"
+ren_end = "De esta forma tu mascota tendrá su registro en cualquier ciudad del Perú usando un microchip de identificación\n"
+
+choice_menu_5 = print(ren_tit, nam,ren_ini, ren_info, ren_end)
+#Abajo se abrirán un sub menu contando /video de youtube https://www.youtube.com/watch?v=W-yP0CYFSaU/ 
+# inscribirlo ya / que datos necesito
+# volver al menu principal
+
