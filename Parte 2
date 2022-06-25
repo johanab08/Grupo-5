@@ -1,0 +1,42 @@
+a= float(input("Altura de la mascota: "))
+p=int(input("Peso de la mascota: "))
+
+meses = int(input("meses de la mascota: "))
+
+
+imc = (a*p)/2
+
+if imc < 35:
+  print("Buen peso")
+
+elif 45 < imc <= 70:
+  print("sobrepeso")
+
+else:
+  print("Disminuir el consumo de alimento")
+
+print("../°.°\...\°*°/..../°.°\.....")
+print("la alimentacion de su mascota depende de su imc",(imc))
+print("../\°*°/\.....")
+
+def peso_meses (meses, Z):
+  if meses <= 2 :
+    y = Z*0.50
+    print("Su mascota debe comer ", y , " kg por dia ")
+  elif 2 < meses  <= 6:
+    y=Z*0.7
+    print("Su mascota debe comer",y," kg por dia ")
+  elif 6 < meses <= 12:
+    y=Z*0.8
+    print("Su mascota debe comer",y,"kg por dia ")
+
+if imc < 10 :
+  peso_meses(meses,10)
+elif 10 <= imc <= 20: 
+  peso_meses(meses,20)
+elif 20 <= imc <= 30: 
+  peso_meses(meses,30)
+elif 30 <= imc <= 40: 
+  peso_meses(meses,40)
+else:
+  peso_meses(meses,50)
