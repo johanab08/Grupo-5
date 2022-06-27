@@ -1,0 +1,39 @@
+print("ENTRENAMIENTOS Y CUIDADOS AVANZADOS DE NUESTRAS MASCOTAS")
+
+print("¿Cuantos meses tiene su mascota de 0 a 11?")
+Edad_Me=int(input("¿Cuantos meses :"))
+print("¿Cuantos años tiene su mascota de 0 a mas")
+Edad_Año=int(input("¿Cuantos años :"))
+
+Año_Me=Edad_Año*12
+Edad=Año_Me+Edad_Me
+print("Segun la cantidad de meses te recomendamos que cuidados puedes dar a tu mascota")
+if 0< Edad<=1:
+  print("A los 12 dias de nacidos nuestras mascotas ya deben visitar un veterinario ")
+  print("Para que el profecional indique una desparacitacion adadtada a la edad de la mascota")
+elif 1<Edad<=2:
+  print("-"*70)
+  print("Si nuestra mascota ya esta cumpliendo sus 6 semanas osea un mes y medio ya deberia de ")
+  print("tener una visita al veterinario para su primera vacuna del parvovirus")
+  print("La infección por Parvovirus se previene a través de la vacunación de perros a partir")
+  print("de los 45 - 60 días de edad. Es una vacuna con virus Parvovirus vivos no patógenos,"
+  print("que se multiplicarán dentro del cuerpo del perro vacunado y montarán una respuesta inmune defensiva.")
+elif 2<Edad<=4:
+  print("-"*70)
+  print("La vacuna contra la distemper es esencial para su mascota a partir de sus 8 semanas de nacido")
+  print("El distemper o moquillo es una enfermedad canina muy contagiosa que sigue siendo muy temible. ")
+  print("Debido a que por el virus del moquillo canino. Afecta fundamentalmente a los perros, pero")
+  print("otros animales silvestres, como zorros y hurones, pueden verse gravemente afectados.")
+elif 4<Edad<=6:
+  print("-"*70)
+  print("Al cumplir  12 semanas es recomendable  vacunar a nuestra mascota con una vacuna contra  hepatitis")
+  print("infecciosa canina ya que es peligrosa por el contagio que  causa por un virus, el adenovirus canino del tipo 1 ")
+
+elif 6<Edad<=12:
+  print("-"*70)
+
+elif 12<Edad<=24:
+  print("-"*70)
+
+elif 24<Edad<=36:
+  print("-"*70)
